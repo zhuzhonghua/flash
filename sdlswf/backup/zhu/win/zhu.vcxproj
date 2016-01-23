@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92B1ABC6-BDD8-4A44-AF57-9085F9645941}</ProjectGuid>
+    <RootNamespace>zhu</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include;$(ProjectDir)..\..\boost;$(ProjectDir)..\;$(ProjectDir)..\..\other\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\libs\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\other\zlib\adler32.c" />
+    <ClCompile Include="..\..\other\zlib\compress.c" />
+    <ClCompile Include="..\..\other\zlib\crc32.c" />
+    <ClCompile Include="..\..\other\zlib\deflate.c" />
+    <ClCompile Include="..\..\other\zlib\gzio.c" />
+    <ClCompile Include="..\..\other\zlib\infback.c" />
+    <ClCompile Include="..\..\other\zlib\inffast.c" />
+    <ClCompile Include="..\..\other\zlib\inflate.c" />
+    <ClCompile Include="..\..\other\zlib\inftrees.c" />
+    <ClCompile Include="..\..\other\zlib\trees.c" />
+    <ClCompile Include="..\..\other\zlib\uncompr.c" />
+    <ClCompile Include="..\..\other\zlib\zutil.c" />
+    <ClCompile Include="..\base\image.cpp" />
+    <ClCompile Include="..\base\zlib_file.cpp" />
+    <ClCompile Include="..\sdl2\main.cpp" />
+    <ClCompile Include="..\sdl2\sdl2_file.cpp" />
+    <ClCompile Include="..\sdl2\sdl2_render_handler.cpp" />
+    <ClCompile Include="..\swf\as_object.cpp" />
+    <ClCompile Include="..\swf\bitmap_character.cpp" />
+    <ClCompile Include="..\swf\character.cpp" />
+    <ClCompile Include="..\swf\character_def.cpp" />
+    <ClCompile Include="..\swf\context.cpp" />
+    <ClCompile Include="..\swf\movie_definition.cpp" />
+    <ClCompile Include="..\swf\movie_definition_impl.cpp" />
+    <ClCompile Include="..\swf\render.cpp" />
+    <ClCompile Include="..\swf\set_background_color.cpp" />
+    <ClCompile Include="..\swf\shape_character_def.cpp" />
+    <ClCompile Include="..\swf\sprite.cpp" />
+    <ClCompile Include="..\swf\stage.cpp" />
+    <ClCompile Include="..\swf\stream.cpp" />
+    <ClCompile Include="..\swf\tag_loader.cpp" />
+    <ClCompile Include="..\swf\type\cxform.cpp" />
+    <ClCompile Include="..\swf\type\fill_style.cpp" />
+    <ClCompile Include="..\swf\type\line_style.cpp" />
+    <ClCompile Include="..\swf\type\matrix.cpp" />
+    <ClCompile Include="..\swf\type\point.cpp" />
+    <ClCompile Include="..\swf\type\rect.cpp" />
+    <ClCompile Include="..\swf\type\rgba.cpp" />
+    <ClCompile Include="..\swf\zplayer.cpp" />
+    <ClCompile Include="..\system.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\other\zlib\crc32.h" />
+    <ClInclude Include="..\..\other\zlib\deflate.h" />
+    <ClInclude Include="..\..\other\zlib\inffast.h" />
+    <ClInclude Include="..\..\other\zlib\inffixed.h" />
+    <ClInclude Include="..\..\other\zlib\inflate.h" />
+    <ClInclude Include="..\..\other\zlib\inftrees.h" />
+    <ClInclude Include="..\..\other\zlib\mozzconf.h" />
+    <ClInclude Include="..\..\other\zlib\trees.h" />
+    <ClInclude Include="..\..\other\zlib\zconf.h" />
+    <ClInclude Include="..\..\other\zlib\zlib.h" />
+    <ClInclude Include="..\..\other\zlib\zutil.h" />
+    <ClInclude Include="..\base\file.h" />
+    <ClInclude Include="..\base\image.h" />
+    <ClInclude Include="..\base\memory_state.h" />
+    <ClInclude Include="..\base\utility.h" />
+    <ClInclude Include="..\base\zlib_file.h" />
+    <ClInclude Include="..\global.h" />
+    <ClInclude Include="..\sdl2\sdl2_file.h" />
+    <ClInclude Include="..\sdl2\sdl2_render_handler.h" />
+    <ClInclude Include="..\swf\as_object.h" />
+    <ClInclude Include="..\swf\as_object_interface.h" />
+    <ClInclude Include="..\swf\bitmap_character.h" />
+    <ClInclude Include="..\swf\character.h" />
+    <ClInclude Include="..\swf\character_def.h" />
+    <ClInclude Include="..\swf\context.h" />
+    <ClInclude Include="..\swf\enum.h" />
+    <ClInclude Include="..\swf\execute_tag.h" />
+    <ClInclude Include="..\swf\movie_definition.h" />
+    <ClInclude Include="..\swf\movie_definition_impl.h" />
+    <ClInclude Include="..\swf\render.h" />
+    <ClInclude Include="..\swf\render_handler.h" />
+    <ClInclude Include="..\swf\set_background_color.h" />
+    <ClInclude Include="..\swf\shape_character_def.h" />
+    <ClInclude Include="..\swf\sprite.h" />
+    <ClInclude Include="..\swf\stage.h" />
+    <ClInclude Include="..\swf\stream.h" />
+    <ClInclude Include="..\swf\tag_loader.h" />
+    <ClInclude Include="..\swf\type\bitmap_info.h" />
+    <ClInclude Include="..\swf\type\cxform.h" />
+    <ClInclude Include="..\swf\type\fill_style.h" />
+    <ClInclude Include="..\swf\type\line_style.h" />
+    <ClInclude Include="..\swf\type\matrix.h" />
+    <ClInclude Include="..\swf\type\point.h" />
+    <ClInclude Include="..\swf\type\rect.h" />
+    <ClInclude Include="..\swf\type\rgba.h" />
+    <ClInclude Include="..\swf\zplayer.h" />
+    <ClInclude Include="..\system.h" />
+    <ClInclude Include="..\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\other\zlib\algorithm.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\other\zlib\ChangeLog" />
+    <None Include="..\..\other\zlib\ChangeLog.moz" />
+    <None Include="..\..\other\zlib\FAQ" />
+    <None Include="..\..\other\zlib\INDEX" />
+    <None Include="..\..\other\zlib\manifest.mk" />
+    <None Include="..\..\other\zlib\objs.mk" />
+    <None Include="..\..\other\zlib\README" />
+    <None Include="..\..\other\zlib\zlib.3" />
+    <None Include="..\..\other\zlib\zlib.def" />
+    <None Include="..\..\other\zlib\zlib.pkg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

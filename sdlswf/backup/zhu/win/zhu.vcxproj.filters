@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="sdl2">
+      <UniqueIdentifier>{360be9db-bdbb-4efd-a417-cbc1eccbdfaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="swf">
+      <UniqueIdentifier>{6e1c90fa-3247-4e3f-88d0-9cd8680e75fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{ea5c0c12-9bea-4b26-9881-5ec5e6032112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="swf\type">
+      <UniqueIdentifier>{5142edbb-eb74-4278-9816-f170d4814aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{064bfa89-76fa-4a8e-b9ec-3ddeae24762c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\zlib">
+      <UniqueIdentifier>{7356ab85-c522-4795-92cf-d50f12cf7cd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sdl2\main.cpp">
+      <Filter>sdl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\zplayer.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\tag_loader.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\system.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\movie_definition_impl.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdl2\sdl2_file.cpp">
+      <Filter>sdl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\zlib_file.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\stream.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\movie_definition.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\rect.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\rgba.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\adler32.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\compress.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\crc32.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\deflate.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\gzio.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\infback.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\inffast.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\inflate.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\inftrees.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\trees.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\uncompr.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\other\zlib\zutil.c">
+      <Filter>other\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\context.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\stage.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\character_def.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\sprite.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\character.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\as_object.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdl2\sdl2_render_handler.cpp">
+      <Filter>sdl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\render.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\shape_character_def.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\set_background_color.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\fill_style.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\line_style.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\matrix.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\point.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\bitmap_character.cpp">
+      <Filter>swf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\swf\type\cxform.cpp">
+      <Filter>swf\type</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\image.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\swf\zplayer.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\enum.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\movie_definition.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\stream.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\tag_loader.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\utility.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\file.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\movie_definition_impl.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl2\sdl2_file.h">
+      <Filter>sdl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\zlib_file.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\rect.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\rgba.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\execute_tag.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\as_object_interface.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\as_object.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\character.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\crc32.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\deflate.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\inffast.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\inffixed.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\inflate.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\inftrees.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\mozzconf.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\trees.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\zconf.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\zlib.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\other\zlib\zutil.h">
+      <Filter>other\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\context.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\stage.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\character_def.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\sprite.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl2\sdl2_render_handler.h">
+      <Filter>sdl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\render_handler.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\render.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\shape_character_def.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\set_background_color.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory_state.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\fill_style.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\line_style.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\matrix.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\point.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\bitmap_character.h">
+      <Filter>swf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\bitmap_info.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\swf\type\cxform.h">
+      <Filter>swf\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\image.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\other\zlib\algorithm.txt">
+      <Filter>other\zlib</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\other\zlib\ChangeLog">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\ChangeLog.moz">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\FAQ">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\INDEX">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\manifest.mk">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\objs.mk">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\README">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\zlib.3">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\zlib.def">
+      <Filter>other\zlib</Filter>
+    </None>
+    <None Include="..\..\other\zlib\zlib.pkg">
+      <Filter>other\zlib</Filter>
+    </None>
+  </ItemGroup>
+</Project>

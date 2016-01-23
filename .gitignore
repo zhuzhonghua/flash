@@ -1,0 +1,57 @@
+Debug
+*.obj
+*.log
+*.user
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.pdb
+*.opensdf
+*.sdf
+*.suo
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+*.obj
+*.idb
+*.pdb
+*.exe
+*.ilk
+*.log
+*.pdb
+*.tlog*
+*.sdf
+*.suo
+*.opensdf
+*.user
+*.exp
+
+backup/boost

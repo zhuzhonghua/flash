@@ -1,0 +1,56 @@
+#ifndef Z_AS_OBJECT_INTERFACE_
+#define Z_AS_OBJECT_INTERFACE_
+
+// Unique id of all gameswf resources
+enum ASClasses
+{
+	AS_OBJECT,
+	AS_CHARACTER,
+	AS_SPRITE,
+	AS_FUNCTION,
+	AS_C_FUNCTION,
+	AS_S_FUNCTION,
+	AS_3_FUNCTION,	// action script 3 function
+	AS_MOVIE_DEF,
+	AS_MOVIE_DEF_SUB,
+	AS_CHARACTER_DEF,
+	AS_SPRITE_DEF,
+	AS_VIDEO_DEF,
+	AS_SOUND_SAMPLE,
+	AS_VIDEO_INST,
+	AS_KEY,
+	AS_ARRAY,
+	AS_COLOR,
+	AS_SOUND,
+	AS_FONT,
+	AS_CANVAS,
+	AS_NETSTREAM,
+	AS_STRING,
+	AS_SELECTION,
+	AS_POINT,
+	AS_MATRIX,
+	AS_TRANSFORM,
+	AS_COLOR_TRANSFORM,
+	AS_NETCONNECTION,
+	AS_LISTENER,
+	AS_DATE,
+	AS_EDIT_TEXT,
+	AS_XML_SOCKET,
+	AS_TEXTFORMAT,
+	AS_MCLOADER,
+	AS_LOADVARS,
+	AS_TIMER,
+	AS_MOUSE,
+
+	// flash9
+	AS_EVENT,
+	AS_MOUSE_EVENT,
+};
+
+class ASObjectInterface
+{
+public:
+	virtual bool is(int class_id) const = 0;
+};
+
+#endif
