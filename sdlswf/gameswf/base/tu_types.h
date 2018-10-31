@@ -66,6 +66,8 @@
 
 #endif	// not __I366__ and not _WIN32
 
+typedef uint64_t	Uint64;
+typedef int64_t Sint64;
 
 typedef Uint8 uint8;
 typedef Sint8 sint8;

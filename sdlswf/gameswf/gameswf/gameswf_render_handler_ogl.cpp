@@ -63,7 +63,7 @@ PFNGLDELETESHADERPROC glDeleteShader = 0;
 typedef GLuint (APIENTRY* PFNGLCREATESHADERPROC) (GLenum type);
 PFNGLCREATESHADERPROC glCreateShader = 0;
 
-typedef void (APIENTRY* PFNGLSHADERSOURCEPROC) (GLuint shader, GLsizei count, const GLchar* *string, const GLint *length);
+//typedef void (APIENTRY* PFNGLSHADERSOURCEPROC) (GLuint shader, GLsizei count, const GLchar* *string, const GLint *length);
 PFNGLSHADERSOURCEPROC glShaderSource = 0;
 
 typedef void (APIENTRY* PFNGLCOMPILESHADERPROC) (GLuint shader);

@@ -6,7 +6,7 @@
 # Makefile for gameswf library & tests.
 
 TOP = ..
-include $(TOP)/config
+include $(TOP)/config_mac
 
 
 INCLUDE_PATHS := $(ENGINE_INCLUDE) $(ZLIB_INCLUDE) $(SDL_MIXER_INCLUDE) $(LIBMAD_INCLUDE) # $(XML2_INCLUDE) 
@@ -15,8 +15,8 @@ CFLAGS := $(CFLAGS) $(INCLUDE_PATHS) $(CC_DEBUG_FLAGS)
 LDFLAGS := $(FT_LDFLAGS) $(SDL_LDFLAGS) $(LIB_DEBUG_FLAGS) $(LDFLAGS)
 
 LIB_OUT = $(LIB_PRE)gameswf.$(LIB_EXT)
-#EXE_OUT = gameswf_test_ogl$(EXE_EXT)
-EXE_OUT = main$(EXE_EXT)
+EXE_OUT = gameswf_test_ogl$(EXE_EXT)
+#EXE_OUT = main$(EXE_EXT)
 PARSER_OUT = gameswf_parser$(EXE_EXT)
 PROCESSOR_OUT = gameswf_processor$(EXE_EXT)
 
@@ -99,15 +99,15 @@ LIB_OBJS = \
 	gameswf_video_impl.$(OBJ_EXT)	\
 
 
-#TEST_PROGRAM_OBJS = \
-#	gameswf_test_ogl.$(OBJ_EXT)             \
-#	gameswf_render_handler_ogl.$(OBJ_EXT)	\
-#	gameswf_sound_handler_sdl.$(OBJ_EXT)	\
-
 TEST_PROGRAM_OBJS = \
-	main.$(OBJ_EXT)             \
+	gameswf_test_ogl.$(OBJ_EXT)             \
 	gameswf_render_handler_ogl.$(OBJ_EXT)	\
 	gameswf_sound_handler_sdl.$(OBJ_EXT)	\
+
+#TEST_PROGRAM_OBJS = \
+#	main.$(OBJ_EXT)             \
+#	gameswf_render_handler_ogl.$(OBJ_EXT)	\
+#	gameswf_sound_handler_sdl.$(OBJ_EXT)	\
 
 PARSER_OBJS = \
 	gameswf_parser.$(OBJ_EXT) 

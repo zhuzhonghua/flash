@@ -444,8 +444,8 @@ net_socket* net_interface_tcp::accept()
 	SOCKET	remote_socket;
 	struct sockaddr_in client;
 	int ln = sizeof(sockaddr_in);
-	//remote_socket = ::accept(m_socket, (sockaddr*) &client, (socklen_t*)&ln);
-	remote_socket = ::accept(m_socket, (sockaddr*)&client, (int*)&ln);
+	remote_socket = ::accept(m_socket, (sockaddr*) &client, (socklen_t*)&ln);
+	//remote_socket = ::accept(m_socket, (sockaddr*)&client, (int*)&ln);
 	if (remote_socket == INVALID_SOCKET)
 	{
 		// No connection pending, or some other error.

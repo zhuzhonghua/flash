@@ -2,7 +2,7 @@
 
 
 TOP = ..
-include $(TOP)/config
+include $(TOP)/config_mac
 
 INCLUDE_PATHS := $(ENGINE_INCLUDE) $(LIBPNG_INCLUDE) $(ZLIB_INCLUDE) $(JPEGLIB_INCLUDE)
 

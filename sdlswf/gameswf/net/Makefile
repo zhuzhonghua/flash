@@ -6,7 +6,7 @@
 # Makefile for net library & tests.
 
 TOP = ..
-include $(TOP)/config
+include $(TOP)/config_mac
 
 INCLUDE_PATHS := $(ENGINE_INCLUDE) $(SOCKET_INCLUDE)
 
